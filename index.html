@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/698d8e9fef.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Jesus</title>
+</head>
+<body>
+    <header>
+          <div class="titulo">
+            <h1>I am <strong>Jesus</strong></h1>
+            <h1 class="ml2">A Front End Developer</h1>
+          </div>
+    </header>
+
+    <!-- Sticky NavBar -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <a class="navbar-brand" href="#">Home</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- Informacion de introduccion -->
+    <section id="aboutMe">
+        <div class="container aboutMe">
+            <div class="card mt-5">
+                <div class="row">
+                    <div class="col-sm d-flex align-items-center">
+                        <div class="card-body">
+                            <img class="img-fluid" src="imagenUno.jpg" alt="https://www.freepik.es/fotos-vectores-gratis/ordenador">
+                        </div>
+                    </div>
+                    <div class="tarjeta col-sm d-flex align-items-center">
+                        <div class="card-body">
+                            <p>I'm a Front-End Developer based in Medellin Colombia, i have serious passion for develop and collaborate on development projects, I consider myself a responsible person, teamworker and researcher. I like to keep things simple and easy to understand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container aboutMe">
+            <div class="card">
+                <div class="row">
+                    <div class="col-sm d-flex align-items-center">
+                        <div class="card-body">
+                            <h1 class="tituloSkills">My Skills</h1>
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <h2 style="margin: 4px 4px; color: #035aa6;"><i class="fab fa-html5"></i></h2>
+                                    <div class="progress" style="width: 100%; height: 26px; background: rgba(0, 0, 0, .25);">
+                                        <div id="html" class="progress-bar" style="width: 81%; height: 26px;"></div>
+                                    </div>
+                                </div>
+                    
+                                <div class="d-flex align-items-center">
+                                    <h2 style="margin: 4px 4px; color: #035aa6;"><i class="fab fa-css3-alt"></i></h2>
+                                    <div class="progress" style="width: 100%; height: 26px; background: rgba(0, 0, 0, .25);">
+                                        <div id="css" class="progress-bar" style="width: 79%; height: 26px;"></div>
+                                    </div>
+                                </div>
+                    
+                                <div class="d-flex align-items-center">
+                                    <h2 style="margin: 4px 4px; color: #035aa6;"><i class="fab fa-js-square"></i></h2>
+                                    <div class="progress" style="width: 100%; height: 26px; background: rgba(0, 0, 0, .25);">
+                                        <div id="js" class="progress-bar" style="width: 74%; height: 26px;"></div>
+                                    </div>
+                                </div>
+                    
+                                <div class="d-flex align-items-center">
+                                    <h2 style="margin: 4px 4px; color: #035aa6;"><i class="fab fa-react"></i></h2>
+                                    <div class="progress" style="width: 100%; height: 26px; background: rgba(0, 0, 0, .25);">
+                                        <div id="react" class="progress-bar" style="width: 69%; height: 26px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm d-flex align-items-center">
+                        <div class="card-body">
+                            <img class="img-fluid" src="imagenTres.jpg" alt="https://www.freepik.es/fotos-vectores-gratis/diseno">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificados -->
+    <section class="mb-4">
+
+        <div class="container">
+            <div class="d-flex justify-content-center mb-5">
+                <h1 class="certificadoTitulo">Certifications</h1>
+            </div>
+            <div class="row">
+                    <!-- Certificado front End -->
+                <div class="col-sm">
+                    <img id="myImg" class="imagen" src="certificadoFrontEnd.png" alt="" style="width:100%;max-width:300px">
+                    <div id="myModal" class="modal">
+                        <span class="close" style="margin-top: 40px;">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                    <!-- Certificado JavaScript -->
+                <div class="col-sm">
+                    <img id="myImgDos" class="imagen" src="certificadoJS.png" alt="" style="width:100%;max-width:300px">
+                    <div id="myModal" class="modal">
+                        <span class="close" style="margin-top: 40px;">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                    <!-- Certificado React -->
+                <div class="col-sm">
+                    <img id="myImgTres" class="imagen" src="certificadoReact.png" alt="" style="width:100%;max-width:300px">
+                    <div id="myModal" class="modal">
+                        <span class="close" style="margin-top: 40px;">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <div class="piePagina">
+            <h2>Contact Me</h2>
+            <div>
+                <ul style="margin-top: 10px;">
+                    <li><a href="https://www.linkedin.com/in/jesus-rodriguez-b624a27a/" target="_blank" class="contactos font"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/pup_uno/" target="_blank" class="contactos font"><i class="fab fa-instagram-square"></i>Instagram</a></li>
+                    <li><a href="https://github.com/pup-uno" target="_blank" class="contactos font"><i class="fab fa-github-square"></i>GitHub</a></li>
+                </ul>
+            </div>
+            <p class="madeBy">Made By Jesus Rodriguez</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
