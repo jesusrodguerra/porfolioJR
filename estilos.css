@@ -123,12 +123,27 @@ header h1{
   
 
 /* Certificados */
-/* Style the Image Used to Trigger the Modal */
+
 .certificadoTitulo{
     font-size: 50px;
     font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    margin-bottom: 12px;
 }
 
+.imagenCarrusel{
+    display: block;
+    margin: auto;    
+}
+
+.icon{
+    color: black;
+    background: #c3c3c3;
+    opacity: 2px;
+    /* width: 12px; */
+}
+
+/* Style the Image Used to Trigger the Modal */
 .imagen {
     border-radius: 5px;
     cursor: pointer;
@@ -288,5 +303,12 @@ li:hover .contactos{
     .madeBy{
         font-size: 14px;
         margin-top: 23px;
+    }
+
+    .icon{
+        color: black;
+        background: #c3c3c3;
+        opacity: 2px;
+        width: 12px;
     }
 }
