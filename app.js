@@ -18,3 +18,21 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+// Funcion para animar las barras al hacer scroll
+window.addEventListener('scroll', () => {
+  const animacion = document.getElementById('html')
+  const animacion2 = document.getElementById('css')
+  const animacion3 = document.getElementById('js')
+  const animacion4 = document.getElementById('react')
+  const posicion = animacion.getBoundingClientRect().top;
+
+  const pantallaSize = window.innerHeight/3;
+
+  if(posicion < pantallaSize){
+      animacion.style.animation = 'carga 3s ease-out'
+      animacion2.style.animation = 'carga2 4s ease-out'
+      animacion3.style.animation = 'carga3 2s ease-out'
+      animacion4.style.animation = 'carga4 4s ease-out'
+  }
+})

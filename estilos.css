@@ -58,27 +58,6 @@ header h1{
 }
 
 /* animacion de la barra */
-.progress-bar {
-    animation-duration: 3s;
-    animation-name: carga;
-    background-color: #0779e4;
-}
-
-#css {
-    animation-duration: 1.6s;
-    animation-name: carga2;
-}
-
-#js {
-    animation-duration: 2s;
-    animation-name: carga3;
-}
-
-#react {
-    animation: 5s;
-    animation-duration: 2.2s;
-    animation-name: carga4;
-}
 
 @keyframes carga {
     from {
@@ -130,6 +109,47 @@ header h1{
     text-align: center;
     margin-bottom: 12px;
 }
+
+.carousel{
+    width: 100%;
+    overflow: scroll;
+  }
+  
+  .carousel::-webkit-scrollbar{
+    width:0px;
+  }
+  
+  .carousel__container{
+    margin: 30px 0;
+    padding: 20px;
+    white-space: nowrap;
+  }
+  
+  .carousel__item{
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    border-radius: 20px;
+    display: inline-block;
+    transform-origin: center left;
+    transition: .6s;
+  }
+  
+  .carousel__item:hover ~ .carousel__item{
+    transform: translate3d(160px, 0, 0);
+  }
+  
+  .carousel__item:hover{
+    transform: scale(1.5);
+  }
+  
+  .carousel__container:hover .carousel__item{
+    opacity: .6;
+  }
+  
+  .carousel__container:hover .carousel__item:hover{
+    opacity: 1;
+  }
 
 .imagenCarrusel{
     display: block;
